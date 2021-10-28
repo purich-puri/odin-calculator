@@ -31,8 +31,12 @@
         <button onclick="clearCalc()" class="buttons span btn btn-danger">
           CLEAR
         </button>
-        <button onclick="backSpaceCalc()" class="buttons span btn btn-warning">
-          BACKSPACE
+        <button onclick="backSpaceCalc()" class="buttons btn btn-warning">
+          C
+        </button>
+
+        <button onclick="addOperator(this.value)" value="/" class="buttons btn">
+          /
         </button>
 
         <button onclick="addNum(this.value)" value="7" class="buttons btn">
@@ -45,8 +49,8 @@
           9
         </button>
 
-        <button onclick="addOperator(this.value)" value="/" class="buttons btn">
-          /
+        <button onclick="addOperator(this.value)" value="*" class="buttons btn">
+          x
         </button>
 
         <button onclick="addNum(this.value)" value="4" class="buttons btn">
@@ -59,8 +63,8 @@
           6
         </button>
 
-        <button onclick="addOperator(this.value)" value="*" class="buttons btn">
-          x
+        <button onclick="addOperator(this.value)" value="-" class="buttons btn">
+          -
         </button>
 
         <button onclick="addNum(this.value)" value="1" class="buttons btn">
@@ -73,19 +77,16 @@
           3
         </button>
 
-        <button onclick="addOperator(this.value)" value="-" class="buttons btn">
-          -
-        </button>
-
-        <button value="." class="buttons btn">.</button>
-        <button onclick="addNum(this.value)" value="0" class="buttons btn">
-          0
-        </button>
-        <button onclick="doCalc()" class="buttons btn">=</button>
-
         <button onclick="addOperator(this.value)" value="+" class="buttons btn">
           +
         </button>
+
+        <button onclick="addPosNeg()" class="buttons btn">+/-</button>
+        <button onclick="addNum(this.value)" value="0" class="buttons btn">
+          0
+        </button>
+        <button onclick="addDecimal()" value="." class="buttons btn">.</button>
+        <button onclick="doCalc()" class="buttons btn">=</button>
       </div>
     </div>
 
