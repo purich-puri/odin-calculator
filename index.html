@@ -24,7 +24,7 @@
     <div class="calculatorGUI">
       <div class="logoText">CALCULATOR 9000</div>
       <div class="displayCalc">
-        <div id="prevCalc"></div>
+        <div id="prevCalcDisplay"></div>
         <div id="toCalc"></div>
       </div>
       <div class="containers">
@@ -35,99 +35,57 @@
           BACKSPACE
         </button>
 
-        <button
-          onclick="addNum(this.value)"
-          id="btn-7"
-          value="7"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="7" class="buttons btn">
           7
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-8"
-          value="8"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="8" class="buttons btn">
           8
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-9"
-          value="9"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="9" class="buttons btn">
           9
         </button>
 
-        <button class="buttons btn">/</button>
+        <button onclick="addOperator(this.value)" value="/" class="buttons btn">
+          /
+        </button>
 
-        <button
-          onclick="addNum(this.value)"
-          id="btn-4"
-          value="4"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="4" class="buttons btn">
           4
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-5"
-          value="5"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="5" class="buttons btn">
           5
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-6"
-          value="6"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="6" class="buttons btn">
           6
         </button>
 
-        <button class="buttons btn">x</button>
+        <button onclick="addOperator(this.value)" value="*" class="buttons btn">
+          x
+        </button>
 
-        <button
-          onclick="addNum(this.value)"
-          id="btn-1"
-          value="1"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="1" class="buttons btn">
           1
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-2"
-          value="2"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="2" class="buttons btn">
           2
         </button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-3"
-          value="3"
-          class="buttons btn"
-        >
+        <button onclick="addNum(this.value)" value="3" class="buttons btn">
           3
         </button>
 
-        <button class="buttons btn">-</button>
+        <button onclick="addOperator(this.value)" value="-" class="buttons btn">
+          -
+        </button>
 
-        <button id="btn-." value="." class="buttons btn">.</button>
-        <button
-          onclick="addNum(this.value)"
-          id="btn-0"
-          value="0"
-          class="buttons btn"
-        >
+        <button value="." class="buttons btn">.</button>
+        <button onclick="addNum(this.value)" value="0" class="buttons btn">
           0
         </button>
-        <button onclick="calculate()" class="buttons btn">=</button>
+        <button onclick="doCalc()" class="buttons btn">=</button>
 
-        <button class="buttons btn">+</button>
+        <button onclick="addOperator(this.value)" value="+" class="buttons btn">
+          +
+        </button>
       </div>
     </div>
 
