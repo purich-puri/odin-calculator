@@ -4,44 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>The Calculator 9000!</title>
   </head>
   <body>
     <header></header>
     <div class="calculatorGUI">
       <div class="logoText">CALCULATOR 9000</div>
       <div class="displayCalc">
-        <div id="prevCalc">1234567890</div>
-        <div id="toCalc">1234567890</div>
+        <div id="prevCalc"></div>
+        <div id="toCalc"></div>
       </div>
-      <div class="container">
-        <button class="buttons span">CLEAR</button>
-        <button class="buttons span">BACKSPACE</button>
+      <div class="containers">
+        <button onclick="clearCalc()" class="buttons span btn btn-danger">
+          CLEAR
+        </button>
+        <button onclick="backSpaceCalc()" class="buttons span btn btn-warning">
+          BACKSPACE
+        </button>
 
-        <button class="buttons">7</button>
-        <button class="buttons">8</button>
-        <button class="buttons">9</button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-7"
+          value="7"
+          class="buttons btn"
+        >
+          7
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-8"
+          value="8"
+          class="buttons btn"
+        >
+          8
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-9"
+          value="9"
+          class="buttons btn"
+        >
+          9
+        </button>
 
-        <button class="buttons">/</button>
+        <button class="buttons btn">/</button>
 
-        <button class="buttons">4</button>
-        <button class="buttons">5</button>
-        <button class="buttons">6</button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-4"
+          value="4"
+          class="buttons btn"
+        >
+          4
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-5"
+          value="5"
+          class="buttons btn"
+        >
+          5
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-6"
+          value="6"
+          class="buttons btn"
+        >
+          6
+        </button>
 
-        <button class="buttons">x</button>
+        <button class="buttons btn">x</button>
 
-        <button class="buttons">1</button>
-        <button class="buttons">2</button>
-        <button class="buttons">3</button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-1"
+          value="1"
+          class="buttons btn"
+        >
+          1
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-2"
+          value="2"
+          class="buttons btn"
+        >
+          2
+        </button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-3"
+          value="3"
+          class="buttons btn"
+        >
+          3
+        </button>
 
-        <button class="buttons">-</button>
+        <button class="buttons btn">-</button>
 
-        <button class="buttons">.</button>
-        <button class="buttons">0</button>
-        <button class="buttons">=</button>
+        <button id="btn-." value="." class="buttons btn">.</button>
+        <button
+          onclick="addNum(this.value)"
+          id="btn-0"
+          value="0"
+          class="buttons btn"
+        >
+          0
+        </button>
+        <button onclick="calculate()" class="buttons btn">=</button>
 
-        <button class="buttons">+</button>
+        <button class="buttons btn">+</button>
       </div>
     </div>
 

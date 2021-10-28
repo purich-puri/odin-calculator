@@ -12,6 +12,10 @@ body {
   background-color: rgb(99, 99, 99);
 }
 
+footer {
+  color: rgb(209, 209, 209);
+}
+
 .logoText {
   color: rgb(89, 82, 116);
   font-size: small;
@@ -24,7 +28,7 @@ body {
   border-style: solid;
 }
 
-.container {
+.containers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
@@ -52,10 +56,13 @@ body {
   border-radius: 5px;
   padding: 5px;
   margin: 10px 0px;
+  width: 300px;
+  min-height: 99px;
 }
 
 #prevCalc {
   font-size: 16px;
   color: rgb(100, 100, 100);
   padding: 3px;
+  min-height: 20px;
 }
